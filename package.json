@@ -1,0 +1,20 @@
+{
+  "name": "com.av.tags",
+  "version": "0.1.0",
+  "displayName": "Tags",
+  "description": "Replacement of built-in tags with asset-based solution.\nAllows multiple tags on GameObject and compare by reference instead of string.",
+  "keywords": [
+    "GameObject",
+    "ScriptableObjects",
+    "Custom",
+    "Tags",
+    "Fast",
+    "Extensions"
+  ],
+  "author": {
+    "name": "Alternative Visual",
+    "email": "alternativevisualgames@gmail.com",
+    "url": "alternativevisual.dev"
+  },
+  "unity": "2019.3"
+}
