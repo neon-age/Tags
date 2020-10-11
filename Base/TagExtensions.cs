@@ -1,4 +1,4 @@
-﻿
+
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -39,7 +39,7 @@ public static class TagExtensions
 
 	    return firstObject;
     }
-    public static HashSet<GameObject> WithAll(this GameObject gameObject, Tag tag)
+    public static HashSet<GameObject> FindAllWithTag(this GameObject gameObject, Tag tag)
     {
 	    CheckFindWithTagArguments(tag);
 
@@ -51,7 +51,7 @@ public static class TagExtensions
 	    return objectsLookup;
     }
 
-    public static bool TryFindGameObjectWithTag(this GameObject gameObject, Tag tag, out GameObject objectWithTag)
+    public static bool TryFindWithTag(this GameObject gameObject, Tag tag, out GameObject objectWithTag)
     {
 	    CheckFindWithTagArguments(tag);
 
@@ -68,7 +68,7 @@ public static class TagExtensions
 	    }
 	    return true;
     }
-    public static bool TryFindGameObjectsWithTag(this GameObject gameObject, Tag tag, out HashSet<GameObject> objectsLookup)
+    public static bool TryFindAllWithTag(this GameObject gameObject, Tag tag, out HashSet<GameObject> objectsLookup)
     {
 	    CheckFindWithTagArguments(tag);
 	    return allObjectsWithTag.TryGetValue(tag, out objectsLookup) && objectsLookup.Count != 0;
